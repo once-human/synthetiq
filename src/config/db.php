@@ -6,7 +6,7 @@
 $host = 'localhost';      // Database host
 $dbname = 'synthetiq'; // Database name
 $user = 'root';           // Database username
-$pass = 'test';               // Database password
+$pass = '6215@Ony';               // Database password
 
 // Create a new PDO instance
 try {
