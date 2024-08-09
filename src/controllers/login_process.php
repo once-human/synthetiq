@@ -1,5 +1,6 @@
 <?php
 require '../config/db.php';
+// synthetiq - github.com/once-human
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_username = $_POST['email_username'];

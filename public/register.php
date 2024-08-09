@@ -1,29 +1,38 @@
-<?php
-// src/register.php
+<?php include('../src/templates/header.php'); ?>
+<!-- // synthetiq - github.com/once-human -->
+ 
+<main>
+    <div class="register-container">
+        <h2>Create an Account</h2>
+        <form action="../src/controllers/register_process.php" method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="role">Role</label>
+                <select id="role" name="role" required>
+                    <option value="student">Student</option>
+                    <option value="company">Company</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <button type="submit">Register</button>
+            </div>
+            <div class="login-link">
+                <a href="login.php">Already have an account? Login here</a>
+            </div>
+        </form>
+    </div>
+</main>
 
-// Include the database connection
-require '../src/config/db.php';
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-
-    // Hash the password
-    $hashed_password = password_hash($password, PASSWORD_BCRYPT);
-
-    // Insert user into database
-    $stmt = $pdo->prepare("INSERT INTO users (username, email, password, role) VALUES (?, ?, ?, ?)");
-    $stmt->execute([$username, $email, $hashed_password, 'student']);
-
-    echo "Registration successful!";
-}
-?>
-
-<!-- HTML form for registration -->
-<form method="post" action="">
-    Username: <input type="text" name="username" required><br>
-    Email: <input type="email" name="email" required><br>
-    Password: <input type="password" name="password" required><br>
-    <input type="submit" value="Register">
-</form>
+<?php include('../src/templates/footer.php'); ?>

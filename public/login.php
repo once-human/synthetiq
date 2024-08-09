@@ -1,4 +1,5 @@
-<?php include('../src/header.php'); ?>
+<?php include('../src/templates/header.php'); ?>
+<!-- // synthetiq - github.com/once-human -->
 
 <main>
     <div class="login-container">
@@ -21,4 +22,4 @@
     </div>
 </main>
 
-<?php include('../src/footer.php'); ?>
+<?php include('../src/templates/footer.php'); ?>
