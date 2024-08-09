@@ -1,30 +1,24 @@
-<?php
-// src/login.php
+<?php include('../src/header.php'); ?>
 
-// Include the database connection
-require '../src/config/db.php';
+<main>
+    <div class="login-container">
+        <form action="../src/controllers/login_process.php" method="POST">
+            <div class="input-group">
+                <label for="email_username">Email/Username</label>
+                <input type="text" id="email_username" name="email_username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <button type="submit">Login</button>
+            </div>
+            <div class="register-link">
+                <a href="register.php">New user? Register here</a>
+            </div>
+        </form>
+    </div>
+</main>
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-
-    // Fetch user details
-    $stmt = $pdo->prepare("SELECT password FROM users WHERE email = ?");
-    $stmt->execute([$email]);
-    $user = $stmt->fetch();
-
-    if ($user && password_verify($password, $user['password'])) {
-        echo "Login successful!";
-        // Redirect to dashboard or home page
-    } else {
-        echo "Invalid credentials!";
-    }
-}
-?>
-
-<!-- HTML form for login -->
-<form method="post" action="">
-    Email: <input type="email" name="email" required><br>
-    Password: <input type="password" name="password" required><br>
-    <input type="submit" value="Login">
-</form>
+<?php include('../src/footer.php'); ?>
