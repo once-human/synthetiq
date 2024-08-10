@@ -1,6 +1,8 @@
 <?php include('../src/templates/header.php'); ?>
 <!-- // synthetiq - github.com/once-human -->
-
+<head>
+    <link rel="stylesheet" href="../public/assets/css/login.css">
+</head>
 <main>
     <div class="login-container">
         <form action="../src/controllers/login_process.php" method="POST">

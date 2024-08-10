@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.admin-dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left Sidebar */
+.sidebar-left {
+    width: 25%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar-left .profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-left .profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.sidebar-left .profile h3 {
+    margin: 10px 0 0 0;
+}
+
+.sidebar-left nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-left nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar-left nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar-left nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Section */
+.main-content {
+    margin-left: 25%;
+    width: 75%;
+    padding: 20px;
+}
+
+.main-content section {
+    margin-bottom: 40px;
+}
+
+.main-content h1, .main-content h2 {
+    margin-bottom: 20px;
+}
+
+.dashboard-overview {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.overview-card {
+    width: 23%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-filter input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-filter button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.student-list, .company-list, .job-list, .notification-list, .report-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.student-card, .company-card, .job-card, .notification-card, .report-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.student-card button, .company-card button, .job-card button, .report-card button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settings-options button {
+    display: block;
+    margin: 10px 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.profile-page {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+/* Left Sidebar - Navigation Panel */
+.sidebar-left {
+    width: 25%;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar-left .nav {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-left .nav li {
+    margin: 20px 0;
+}
+
+.sidebar-left .nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar-left .nav li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section */
+.main-section {
+    margin-left: 25%;
+    width: 75%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.file-input {
+    display: none;
+}
+
+h3, p, ul {
+    margin: 0 0 10px 0;
+}
+
+.save-settings-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.save-settings-btn:hover {
+    background-color: #0056b3;
+}
