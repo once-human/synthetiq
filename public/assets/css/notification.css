@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.notifications {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.notification-card {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.notification-card:last-child {
+    border-bottom: none;
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.notification-type {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.notification-time {
+    font-size: 12px;
+    color: #999;
+}
+
+.notification-body h3 {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.notification-body p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.notification-user {
+    font-size: 14px;
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.notification-type.new-user {
+    background-color: #28a745;
+}
+
+.notification-type.message {
+    background-color: #f0ad4e;
+}
+
+.notification-type.comment {
+    background-color: #6f42c1;
+}
+
+.notification-type.connect {
+    background-color: #0275d8;
+}

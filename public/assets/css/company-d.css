@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.company-dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left Sidebar */
+.sidebar-left {
+    width: 25%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar-left .profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-left .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.sidebar-left .profile h3 {
+    margin: 10px 0 0 0;
+}
+
+.sidebar-left nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-left nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar-left nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar-left nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Section */
+.main-content {
+    margin-left: 25%;
+    width: 75%;
+    padding: 20px;
+}
+
+.main-content section {
+    margin-bottom: 40px;
+}
+
+.main-content h1, .main-content h2 {
+    margin-bottom: 20px;
+}
+
+.dashboard-overview {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.overview-card {
+    width: 23%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.add-job-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.job-list, .resume-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-card, .resume-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.job-card button, .resume-card button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.profile-form input, .profile-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.profile-form button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settings-options button {
+    display: block;
+    margin: 10px 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

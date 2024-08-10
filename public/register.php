@@ -1,6 +1,8 @@
 <?php include('../src/templates/header.php'); ?>
 <!-- // synthetiq - github.com/once-human -->
- 
+<head>
+    <link rel="stylesheet" href="..\public\assets\css\register.css">
+</head>
 <main>
     <div class="register-container">
         <h2>Create an Account</h2>
