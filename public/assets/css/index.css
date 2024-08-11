@@ -1,0 +1,138 @@
+/* Global Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #007BFF; /* Accent color */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button.primary {
+    background-color: #0056b3; /* Darker shade of the accent color */
+}
+
+.cta-button.secondary {
+    background-color: #004494; /* Even darker shade */
+}
+
+.cta-button:hover {
+    background-color: #003366; /* Darkest shade */
+}
+
+/* Features Section */
+.features {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.features h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.feature-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 300px;
+    display: inline-block;
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 1em;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.about-us .cta-button.learn-more {
+    background-color: #0056b3; /* Darker shade of the accent color */
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+}
+
+.contact a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
