@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Base directory for the rewrites
+    RewriteBase /synthetiq/public/
+
+    # Redirect all requests to their respective .php files if they exist
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)\.php$ /synthetiq/public/$1.php [L]
+
+    # Redirect root requests to index.php
+    RewriteRule ^$ /synthetiq/public/index.php [L]
+
+    # Handle clean URLs (e.g., login, register)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /synthetiq/public/$1.php [L]
+</IfModule>
