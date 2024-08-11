@@ -71,7 +71,7 @@
 </head>
 <header>
     <div class="logo">
-        <img src="/assets/images/logo.png" alt="Logo">
+        <img src="../public/assets/img/navbar-logo.png" alt="site-Logo">
     </div>
     <nav>
         <ul>
