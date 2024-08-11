@@ -1,7 +1,7 @@
 <?php include('../src/templates/header.php'); ?>
 
 <head>
-    <link rel="stylesheet" href="..\public\assets\css\sadmin-d.css">
+    <link rel="stylesheet" href="..\public\assets\css\admin-d.css">
 </head>
 <main>
 <div class="admin-dashboard">
