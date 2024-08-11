@@ -2,15 +2,20 @@
     <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
     <style>
         header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 8px;
-            background-color: #f2f2f2;
-            margin-bottom: 20px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        background-color: rgba(255, 255, 255, 0.2); 
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px); 
+        border: 1px solid rgba(255, 255, 255, 0.3); 
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
         }
         nav ul li a {
             text-decoration: none;
@@ -19,8 +24,8 @@
 
         }
         .logo img {
-            width: 100px;
-            height: 30px;
+            width: 200px;
+            height: 60px;
         }
 
         nav ul {
