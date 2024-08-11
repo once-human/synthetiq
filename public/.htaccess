@@ -17,4 +17,3 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ /synthetiq/public/$1.php [L]
 </IfModule>
-
