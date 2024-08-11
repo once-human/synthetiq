@@ -1,5 +1,9 @@
 <?php include('../src/templates/header.php'); ?>
 <!-- // synthetiq - github.com/once-human -->
+
+<head>
+    <link rel="stylesheet" href="../public/assets/css/index.css">
+</head>
 <main>
     <section class="hero">
         <div class="hero-content">

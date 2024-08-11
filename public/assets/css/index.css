@@ -4,13 +4,14 @@ html, body {
     padding: 0;
     font-family: Arial, sans-serif;
     color: #333;
+    background-color: #f8f9fa; /* Light background for contrast */
 }
 
 /* Hero Section */
 .hero {
     background-color: #007BFF; /* Accent color */
     color: #fff;
-    padding: 60px 20px;
+    padding: 80px 20px; /* More padding for spacious look */
     text-align: center;
 }
 
@@ -20,13 +21,14 @@ html, body {
 }
 
 .hero h1 {
-    font-size: 2.5em;
+    font-size: 3em; /* Larger font size */
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .hero p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+    font-size: 1.5em;
+    margin-bottom: 40px;
 }
 
 .cta-buttons {
@@ -38,12 +40,13 @@ html, body {
 .cta-button {
     display: inline-block;
     padding: 15px 30px;
-    border-radius: 5px;
+    border-radius: 50px; /* Rounded buttons */
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     text-align: center;
     transition: background-color 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .cta-button.primary {
@@ -60,72 +63,174 @@ html, body {
 
 /* Features Section */
 .features {
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
 }
 
 .features h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
+    font-size: 2.5em; /* Larger font size */
+    margin-bottom: 40px;
 }
 
 .feature-card {
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px auto;
-    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Floating card effect */
+    padding: 20px; /* Reduced padding */
+    margin: 10px; /* Reduced margin */
+    max-width: 240px; /* Reduced max-width to fit more cards in one row */
     display: inline-block;
+    vertical-align: top;
+    transition: transform 0.3s ease; /* Hover effect */
+}
+
+.feature-card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
 }
 
 .feature-card h3 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
+    font-size: 1.5em; /* Slightly smaller font size */
+    margin-bottom: 10px; /* Reduced margin */
+    font-weight: bold;
 }
 
 .feature-card p {
-    font-size: 1em;
+    font-size: 1em; /* Slightly smaller font size */
 }
+
 
 /* About Us Section */
 .about-us {
-    padding: 40px 20px;
+    padding: 60px 20px;
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
 .about-us h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
 .about-us p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    line-height: 1.6; /* Better readability */
 }
 
 .about-us .cta-button.learn-more {
-    background-color: #0056b3; /* Darker shade of the accent color */
+    background-color: #0056b3;
+    border-radius: 50px; /* Rounded button */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px;
+    max-width: 400px;
+    font-style: italic;
+    transition: transform 0.3s ease;
+    display: inline-block; /* Make cards inline-block for center alignment */
+    vertical-align: top;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+}
+
+.testimonial-card span {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+
+/* Call-to-Action Section */
+.call-to-action {
+    padding: 80px 20px;
+    background-color: #007BFF; /* Accent color */
+    color: #fff;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    font-size: 3em; /* Larger font size */
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.call-to-action p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.call-to-action .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.faq-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.faq-item p {
+    font-size: 1.2em;
+    line-height: 1.6; /* Better readability */
 }
 
 /* Contact Section */
 .contact {
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
-    background-color: #f4f4f4;
 }
 
 .contact h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
 .contact p {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    margin-bottom: 20px;
 }
 
 .contact a {
