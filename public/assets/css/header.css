@@ -81,8 +81,72 @@ nav ul li a {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-sizing: border-box; /* Include padding in width */
 }
 
 .notification-icon:hover .popup {
     display: block;
+}
+
+.notification-icon .popup p {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Border between messages */
+    color: black;
+}
+
+.notification-icon .popup p:last-child {
+    border-bottom: none; /* Remove border from last message */
+}
+
+.notification-icon .popup p:hover {
+    background-color: #f1f1f1; /* Highlight on hover */
+}
+
+/* Profile icon styles */
+.profile-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-icon .popup {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px; /* Adjust width if needed */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.profile-icon:hover .popup {
+    display: block;
+}
+
+.popup a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #ddd; /* Border between links */
+}
+
+.popup a:last-child {
+    border-bottom: none; /* Remove border from last link */
+}
+
+.popup a:hover {
+    background-color: #f1f1f1; /* Highlight on hover */
 }

@@ -1,4 +1,26 @@
-<?php include('../src/templates/header.php'); ?>
+<?php
+// Start the session
+session_start();
+
+// Check if the user is already logged in
+if (isset($_SESSION['role'])) {
+    // Redirect to the respective dashboard based on the user role
+    switch ($_SESSION['role']) {
+        case 'student':
+            header("Location: ../public/student-d.php");
+            exit();
+        case 'company':
+            header("Location: ../company-d.php");
+            exit();
+        case 'admin':
+            header("Location: ../admin-d.php");
+            exit();
+    }
+}
+
+// Include the header
+include('../src/templates/header.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
