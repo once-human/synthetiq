@@ -1,51 +1,84 @@
-/* CSS for register.php */
+/* Register CSS Code */
 
-.register-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Apply a consistent background and text color */
+body {
+    background-color: #f4f7f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.register-container h2 {
+/* Center content and set max width */
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form headings */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
     text-align: center;
+}
+
+/* Style input groups */
+.input-group {
     margin-bottom: 20px;
 }
 
-.input-group {
-    margin-bottom: 15px;
-}
-
-.input-group label {
+label {
     display: block;
-    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
 }
 
-.input-group input,
-.input-group select {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
-.input-group button {
+/* Style submit button */
+button[type="submit"] {
     width: 100%;
-    padding: 10px;
-    background-color: #4caf50;
-    color: #fff;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 16px;
 }
 
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style login link */
 .login-link {
-    text-align: center;
     margin-top: 15px;
+    text-align: center;
 }
 
 .login-link a {
-    color: #0000ff;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
 }

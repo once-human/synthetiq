@@ -1,54 +1,85 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+/* Global styles for body */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
+
+/* Container to push footer to the bottom */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of viewport */
+}
+
+/* Main content styling */
+.content {
+    flex: 1; /* Grow to fill space between header and footer */
+}
+
+/* Footer styling */
 .footer {
-  background-color: #121212;
-  color: #fff;
-  padding: 40px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+    background-color: #121212;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #333;
 }
+
+/* Styling for left and right sections */
 .footer .left,
 .footer .right {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
+/* Logo styling */
 .footer .left .logo {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
+/* Navigation styling */
 .footer .left .nav {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
+
 .footer .nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
 .footer .nav ul li {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
+
 .footer .nav ul li a {
-  text-decoration: none;
-  color: #bbb;
-  font-size: 14px;
+    text-decoration: none;
+    color: #bbb;
+    font-size: 14px;
 }
+
+/* Right section styling */
 .footer .right {
-  text-align: right;
+    text-align: right;
 }
+
 .footer .right p {
-  margin: 0 0 10px 0;
-  font-size: 14px;
+    margin: 0 0 10px 0;
+    font-size: 14px;
 }
+
+/* Social icons styling */
 .footer .social-icons a {
-  text-decoration: none;
-  color: #bbb;
-  font-size: 20px;
-  margin-right: 10px;
+    text-decoration: none;
+    color: #bbb;
+    font-size: 20px;
+    margin-right: 10px;
 }
+
 .footer .social-icons a:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }

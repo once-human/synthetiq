@@ -20,11 +20,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Redirect based on role
         if ($user['role'] == 'student') {
-            header("Location: student_dashboard.php");
+            header("Location: ../../public/student-d.php");
         } elseif ($user['role'] == 'company') {
-            header("Location: company_dashboard.php");
+            header("Location: ../../company-d.php");
         } elseif ($user['role'] == 'admin') {
-            header("Location: admin_dashboard.php");
+            header("Location: ../../admin-d.php");
         }
         exit();
     } else {

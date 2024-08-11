@@ -1,45 +1,82 @@
 /* Login CSS Code */
 
-.login-container {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Apply a consistent background and text color */
+body {
+    background-color: #f4f7f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+/* Center content and set max width */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form headings */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* Style input groups */
 .input-group {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 label {
     display: block;
     font-weight: bold;
+    color: #555;
 }
 
 input[type="text"],
 input[type="password"] {
     width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
+/* Style submit button */
 button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #4CAF50;
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 16px;
 }
 
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style registration link */
 .register-link {
     margin-top: 10px;
+    text-align: center;
 }
 
 .register-link a {
-    color: #4CAF50;
+    color: #007BFF;
     text-decoration: none;
+    font-size: 16px;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
 }
