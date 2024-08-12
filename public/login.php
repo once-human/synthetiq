@@ -17,6 +17,9 @@ if (isset($_SESSION['role'])) {
             exit();
     }
 }
+    
+// Include the header
+include('../src/templates/header.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,5 +48,6 @@ if (isset($_SESSION['role'])) {
             </form>
         </div>
     </main>
+    <?php include('../src/templates/footer.php'); ?>
 </body>
 </html>
