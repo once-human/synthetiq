@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 .job-details-page {
@@ -13,13 +13,16 @@ body {
 
 /* Left Sidebar */
 .sidebar-left {
-    width: 25%;
-    background-color: #333;
-    color: #fff;
+    width: 20%;
+    background-color: #f2f2f2;
+    color: black;
     padding: 20px;
-    position: fixed;
-    height: 100%;
+    position: sticky;
+    top: 70px;
+    height: 600px;
     overflow-y: auto;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 .sidebar-left h2 {
@@ -39,6 +42,8 @@ body {
 .sidebar-left ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: column !important;
 }
 
 .sidebar-left ul li {
@@ -51,7 +56,6 @@ body {
 
 /* Right Section - Job Details */
 .job-details-section {
-    margin-left: 25%;
     width: 75%;
     padding: 20px;
     overflow-y: auto;
