@@ -9,7 +9,7 @@ html, body {
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Full height of viewport */
+    min-height: 100vh;
 }
 
 /* Main content styling */

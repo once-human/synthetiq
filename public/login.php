@@ -18,7 +18,7 @@ if (isset($_SESSION['role'])) {
     }
 }
     
-// Include the header
+// Header Inclusion
 include('../src/templates/header.php');
 ?>
 <!DOCTYPE html>
