@@ -17,7 +17,7 @@ if (isset($_SESSION['role'])) {
             exit();
     }
 }
-
+    
 // Include the header
 include('../src/templates/header.php');
 ?>
